@@ -1,0 +1,25 @@
+.dashboard{
+    padding: 5%;
+    width: 65%;
+}
+
+.btn{
+    padding: 5%;
+    text-align: center;
+}
+
+.myDlt{
+    padding: 10% 15%;
+    margin: 0% 0% 2% 0%;
+}
+
+.mgrDtl{
+    width: 40%;
+    padding: 10%;
+    margin: 0% 0% 2% 6%;
+    
+}
+
+.penLv{
+    margin-top: 2%;  
+}

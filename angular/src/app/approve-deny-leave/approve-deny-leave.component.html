@@ -1,0 +1,66 @@
+<div class="container">
+    <h2>Approve Deny Leave</h2>
+    <div class="container">
+        <form #userForm=ngForm>
+            <div class="form-group row">
+             
+              <label class="col-sm-2 col-form-label">Employee ID</label>
+              <div class="col-sm-2">
+                {{userEmpId}}
+              </div>
+             
+              <label class="col-sm-2 col-form-label">Start Date</label>
+              <div class="col-sm-2">
+                {{startDate}}
+              </div>
+            
+            </div>
+           
+            <div class="form-group row">
+ 
+                <label class="col-sm-2 col-form-label">End Date</label>
+                <div class="col-sm-2">
+                   {{endDate}} 
+                </div>
+            
+                <label class="col-sm-2 col-form-label">Number of days</label>
+                <div class="col-sm-2">
+                  {{numberOfDays}}
+                </div>
+           
+            </div>
+           
+            <div class="form-group row">
+
+                <label class="col-sm-2 col-form-label">Leave type</label>
+                <div class="col-sm-2">
+                  {{leaveType}}                
+                </div>
+          
+                <label class="col-sm-2 col-form-label">Reason</label>
+                <div class="col-sm-2">
+                    {{reason}}
+                </div>
+           
+            </div>
+           
+            <div class="form-group row">
+               
+                <label class="col-sm-2 col-form-label">Comments</label>
+                <div class="col-sm-2">
+                    <textarea class="form-control" rows="4" cols="50" name="comment" [(ngModel)]="comment" placeholder="Enter comments">
+                        
+                    </textarea>   
+                </div>
+
+            </div>
+
+            <div class="form-group row appBtn">
+                <button type="submit" class="btn btn-primary apply" (click)="approve(userForm)">Approve</button>
+                <button type="submit" class="btn btn-primary deny" (click)="deny(userForm)">Deny</button>
+                <button type="button" class="btn btn-primary" (click)="cancel()">Cancel</button>
+            </div>
+
+        </form>
+    </div>
+</div>

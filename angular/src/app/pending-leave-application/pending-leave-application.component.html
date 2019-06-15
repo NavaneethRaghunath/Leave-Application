@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">	
+          <h2>Pending leave application</h2> </div>
+    </div>
+      
+    <!-- <div class="container">
+      <form>
+          <div class="form-group row">
+              <label class="col-sm-2 col-form-label">Employee ID</label>
+              <div class="col-sm-2">
+                <input type="text" class="form-control" name="empid" placeholder="EMP id">
+              </div>
+              <label class="col-sm-2 col-form-label">Employee Name</label>
+              <div class="col-sm-2">
+                <input type="text" class="form-control" name="empname" placeholder="xxxxxxxxx">
+              </div>
+              <label class="col-sm-2 col-form-label">Employee Leave Balance</label>
+              <div class="col-sm-2">
+                <input type="number" class="form-control" name="leavebln" placeholder="nn">
+              </div>
+          </div>
+      </form>
+
+
+    <!-- </div> -->
+    <div class="container">
+
+          <table id="mytable" class="table">
+              <thead>              
+                <tr>
+                  <th>Leave ID</th>
+                  <th>Number of days</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                  <th>Leave type</th>
+                  <th>Status</th>
+                  <th>Reason</th>
+                </tr>
+              </thead>
+              <tbody>
+                 <tr *ngFor="let user of this.usersList">
+                 
+                    <td><a [routerLink]="[user.leaveId,'approve-deny-leave']">{{user.leaveId}}</a>
+                    </td>
+                    <td>{{user.numberOfDays}}</td>
+                    <td>{{user.startDate}}</td>
+                    <td>{{user.endDate}}</td>
+                    <td>{{user.leaveType}}</td>
+                    <td>{{user.status}}</td>
+                    <td>{{user.reason}}</td>
+              
+                  </tr>
+              </tbody>
+            </table>
+      </div>
+    
+
+
+
+  

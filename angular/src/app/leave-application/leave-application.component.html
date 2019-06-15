@@ -1,0 +1,39 @@
+<div class="container">
+    <h2>My Details Section</h2>
+    <div class="container">
+
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Leave ID</th>
+                <th scope="col">Number of Days</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+                <th scope="col">Leave type</th>
+                <th scope="col">Status</th>
+                <th scope="col">Reason</th>
+                <th scope="col">Applied on</th>
+                <th scope="col">Manager comments</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of this.userList">
+                <th scope="row">{{user.leaveId}}</th>
+                <td>{{user.numberOfDays}}</td>
+                <td>{{user.startDate}}</td>
+                <td>{{user.endDate}}</td>
+                <td>{{user.leaveType}}</td>
+                <td>{{user.status}}</td>
+                <td>{{user.reason}}</td>
+                <td>{{user.appliedOn}}</td>
+                <td>{{user.managerCmt}}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <br>
+          <br>
+          <button type="button" class="btn btn-primary newBtn" (click)=applyLeave()>New Application</button>
+
+     </div> 
+</div>      
